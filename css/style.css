@@ -1,0 +1,372 @@
+:root {
+  --color-light: #fff;
+  --color-dark: #3c3c3c;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+/**********************/
+/*      REUSABLE      */
+/**********************/
+
+.wrapper {
+  max-width:90rem;
+  margin:0 auto;
+  text-align: center;
+}
+
+.wrapper--dark {
+  border:2px solid var(--color-dark);
+  border-top-width: 0;
+}
+
+.wrapper--light {
+  border:2px solid var(--color-light);
+  border-top-width: 0;
+}
+
+.content-wrapper {
+  max-width:52rem;
+  margin:0 auto;
+  padding-bottom: 3rem;
+}
+
+/**********************/
+/*      SECTIONS      */
+/**********************/
+
+.about-us,
+.services,
+.what-we-do {
+  padding:14rem 0;
+}
+
+/**********************/
+/*      BUTTONS       */
+/**********************/
+
+.scroll-down {
+  position: absolute;
+  bottom:5rem
+}
+
+/**********************/
+/*      HEADINGS      */
+/**********************/
+
+.heading-primary{
+  color: var(--color-light);
+  font-size: 5.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.6px;
+  margin-bottom: 5rem;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5.5px;
+
+  display: flex;
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.heading-secondary--dark {
+  color:var(--color-dark);
+}
+
+.heading-secondary--light {
+  color:var(--color-light);
+}
+
+.heading-secondary__text {
+  padding: 0 9rem;
+  transform: translateY(-50%);
+}
+
+.heading-secondary:before,
+.heading-secondary:after {
+  content: "";
+  border-top: 2px solid currentColor;
+  flex:1;
+}
+
+/**********************/
+/*     TYPOGRAPHY     */
+/**********************/
+
+.main-text{
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.main-text--light {
+  color:var(--color-light);
+}
+
+.main-text--dark {
+  color:var(--color-dark);
+}
+
+/**********************/
+/*       HEADER       */
+/**********************/
+
+.header {
+  height:100vh;
+  background-image: url('../img/header-bg/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header__inner {
+  height:100%;
+  max-width:68rem;
+  margin:0 auto;
+  text-align:center;
+  position: relative;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  position: absolute;
+  top:14%;
+}
+
+.header__logo-img {
+  width:6.5rem;
+  height:6.5rem;
+}
+
+.header__text {
+  color:var(--color-light);
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/**********************/
+/*      SERVICES      */
+/**********************/
+
+.services {
+  background-image: url('../img/services-bg/services-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/**********************/
+/*     WHAT-WE-DO     */
+/**********************/
+
+.activity {
+  padding:5rem 0;
+}
+
+.activity__heading {
+  color:var(--color-dark);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.activity__text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.activity__icon {
+  width:8.5rem;
+  height: 8.5rem;
+}
+
+/**********************/
+/*      PORTFOLIO     */
+/**********************/
+
+.portfolio {
+  display:grid;
+  grid-gap:1rem;
+  grid-template-rows: repeat(2, minmax(20rem, 1fr));
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.project--1 {
+  background-image: url('../img/img-1/img-1.jpg');
+}
+
+.project--2 {
+  background-image: url('../img/img-2/img-2.jpg');
+}
+
+.project--3 {
+  background-image: url('../img/img-3/img-3.jpg');
+}
+
+.project--4 {
+  background-image: url('../img/img-4/img-4.jpg');
+}
+
+.project--5 {
+  background-image: url('../img/img-5/img-5.jpg');
+}
+
+.project--6 {
+  background-image: url('../img/img-6/img-6.jpg');
+}
+
+.project__title {
+  color:var(--color-light);
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+
+  padding: 3rem;
+}
+
+/**********************/
+/*      CONTACT-US    */
+/**********************/
+
+.contact-us__btn {
+  color:var(--color-light);
+  font-size: 1.6rem;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  display:inline-block;
+  padding:2rem 13rem;
+  background-color: var(--color-dark);
+
+  transition: all .2s;
+}
+
+.contact-us__btn:hover {
+  filter: brightness(150%);
+}
+
+.contact-us {
+  padding-top:14rem;
+  padding-bottom: 7rem;
+}
+
+/**********************/
+/*      FOOTER        */
+/**********************/
+
+.footer {
+  padding-bottom:7rem;
+}
+
+.footer__content {
+  max-width:50rem;
+  margin:0 auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  margin-right: 2rem;
+}
+
+.footer__logo-img {
+  width:3.5rem;
+  height:3.5rem;
+}
+
+.footer__text {
+  color:var(--color-dark);
+  font-size: 1.4rem;
+}
+
+/**********************/
+/*      UTILITIES     */
+/**********************/
+
+.mb-2x {
+  margin-bottom: 2rem;
+}
+
+.mb-4x {
+  margin-bottom: 4rem;
+}
+
+/**********************/
+/* RESOLUTION QUERIES */
+/**********************/
+
+@media (-webkit-min-device-pixel-ratio: 2) { 
+  .project--1 {
+    background-image: url('../img/img-1/img-1@2x.jpg');
+  }
+
+  .project--2 {
+    background-image: url('../img/img-2/img-2@2x.jpg');
+  }
+  .project--3 {
+    background-image: url('../img/img-3/img-3@2x.jpg');
+  }
+  .project--4 {
+    background-image: url('../img/img-4/img-4@2x.jpg');
+  }
+  .project--5 {
+    background-image: url('../img/img-5/img-5@2x.jpg');
+  }
+  .project--6 {
+    background-image: url('../img/img-6/img-6@2x.jpg');
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) { 
+  .project--1 {
+    background-image: url('../img/img-1/img-1@3x.jpg');
+  }
+
+  .project--2 {
+    background-image: url('../img/img-2/img-2@3x.jpg');
+  }
+  .project--3 {
+    background-image: url('../img/img-3/img-3@3x.jpg');
+  }
+  .project--4 {
+    background-image: url('../img/img-4/img-4@3x.jpg');
+  }
+  .project--5 {
+    background-image: url('../img/img-5/img-5@3x.jpg');
+  }
+  .project--6 {
+    background-image: url('../img/img-6/img-6@3x.jpg');
+  }
+}
